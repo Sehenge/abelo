@@ -41,6 +41,7 @@ require_once "Shortener.php";
 
 <div class="container">
     <table class="table">
+        <thead><tr><td>Original URL</td><td>Short</td><td></td><td></td></tr></thead>
         <?php
         $shortener = new Shortener();
         $allUrls = $shortener->getAllUrls($user_id);
