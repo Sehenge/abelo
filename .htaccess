@@ -1,0 +1,5 @@
+RewriteEngine On
+#RewriteCond $1 !^(index.php)$
+#RewriteRule ^(.*)$ /index.php
+
+RewriteRule ^s/(.*)$ /route.php?url=$1 [R=301]
